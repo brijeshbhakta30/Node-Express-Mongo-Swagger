@@ -23,3 +23,5 @@ To start the project hit:
 ```gulp```
 
 This will start the project.
+
+To view the docs please vist to ```http://host:port/swagger```
