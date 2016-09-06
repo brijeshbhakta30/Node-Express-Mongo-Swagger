@@ -2,7 +2,7 @@
 swagger: '2.0'
 info:
   title: Node-Express-Mongo-Swagger
-  description: Swagger API documentation
+  description: Express-Swagger API documentation
   version: "1.0.0"
 # the domain of the service
 host: localhost:8080
