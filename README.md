@@ -20,7 +20,7 @@ Then run this command ```cp .env.example .env-dev``` and replace details in .env
 
 To start the project hit:  
 
-```gulp```
+``` gulp ```
 
 This will start the project.
 
