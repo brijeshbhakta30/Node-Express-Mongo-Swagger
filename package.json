@@ -1,0 +1,44 @@
+{
+  "name": "Mongoose-Express-Swagger",
+  "version": "1.0.0",
+  "description": "This is a basic demo for NodeJS Express using MongoDB with Swagger for API documentation.",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "1.15.2",
+    "cookie-parser": "1.4.3",
+    "dotenv": "2.0.0",
+    "ejs": "2.4.2",
+    "express": "4.14.0",
+    "express-jwt": "3.4.0",
+    "gulp": "3.9.1",
+    "gulp-nodemon": "2.1.0",
+    "gulp-swagger": "1.0.0",
+    "jsonwebtoken": "7.1.9",
+    "mongoose": "4.5.10",
+    "multer": "1.2.0",
+    "swagger-express": "1.0.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brijeshbhakta30/Node-Express-Mongo-Swagger"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "express",
+    "swagger",
+    "mongoose",
+    "mongodb",
+    "es6"
+  ],
+  "author": "Brijesh Bhakta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brijeshbhakta30/Node-Express-Mongo-Swagger/issues"
+  },
+  "homepage": "https://github.com/brijeshbhakta30/Node-Express-Mongo-Swagger"
+}

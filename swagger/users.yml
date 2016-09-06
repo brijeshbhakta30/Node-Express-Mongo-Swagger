@@ -1,0 +1,105 @@
+# this is an example of the Uber API
+# as a demonstration of an API spec in YAML
+swagger: '2.0'
+info:
+  title: ECS API
+  description: ECS mobiel app API
+  version: "1.0.0"
+# the domain of the service
+host: localhost:8080
+# array of all schemes that your API supports
+schemes:
+  - http
+# will be prefixed to all paths
+basePath: /
+resourcePath: /Users
+description: All about users API
+apis:
+
+- path: /login
+  operations:
+
+  - httpMethod: POST
+    summary: Login with email and password
+    notes: Returns a user based on email
+    responseClass: User
+    nickname: login
+    consumes:
+      - application/json
+    parameters:
+
+    - name: email
+      dataType: string
+      paramType: formData
+      required: true
+      description: Your username
+
+    - name: password
+      dataType: string
+      paramType: formData
+      required: true
+      description: Your password
+
+- path: /signup
+  operations:
+
+  - httpMethod: POST
+    summary: Registers a user
+    notes: Registers and returns a user after successful registrations
+    responseClass: User
+    nickname: signup
+    consumes:
+      - application/json
+    parameters:
+
+    - name: email
+      dataType: string
+      paramType: formData
+      required: true
+      description: Your email
+
+    - name: password
+      dataType: string
+      paramType: formData
+      required: true
+      description: Your password
+
+    - name: firstName
+      dataType: string
+      paramType: formData
+      required: false
+      description: Your first name
+
+    - name: lastName
+      dataType: string
+      paramType: formData
+      required: false
+      description: Your last name
+
+- path: /profile
+  operations:
+
+  - httpMethod: GET
+    summary: Retrives current logged in user details
+    notes: Returns a user based on session
+    responseClass: User
+    nickname: profile
+    consumes:
+      - application/json
+
+models:
+    User:
+      id: User
+      properties:
+        email:
+          type: String
+          required: true
+        password:
+          type: String
+          required: true
+        firstname:
+            type: String
+            required: false
+        lastName:
+            type: String
+            required: false
